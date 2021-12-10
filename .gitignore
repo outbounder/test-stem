@@ -1,0 +1,4 @@
+.kubeconfig
+/node_modules
+dna/_development/secrets.yaml
+dna/_production/secrets.yaml

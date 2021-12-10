@@ -1,0 +1,20 @@
+# the compose file is applied with repo's root as context
+# usage:
+# $ npx angel docker-compose
+version: "3.4"
+services:
+  cell89:
+    # if not set
+    # image: 
+      # auto populated as node alpine
+    # ports: 
+      # auto populated using cellDNA.index.port in _development mode if present
+    # volumes: 
+      # auto populated with repo/dna, repo/cell, repo cell's packages
+    working_dir: "/repo/@{cells.cell89.cwd}"
+    environment:
+      NODE_ENV: development
+      CELL_MODE: _development
+    command: npm run dev
+    labels: 
+      route: '/cell89'

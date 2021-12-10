@@ -1,0 +1,25 @@
+{
+  "name": "test-stem",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">= 10"
+  },
+  "dependencies": {
+    "angelabilities-package-scripts": "^2.0.1",
+    "angelscripts-monorepo-cells": "^5.0.0",
+    "angelscripts-monorepo-packages": "^1.0.0",
+    "organic-angel": "^0.6.0"
+  },
+  "devDependencies": {
+    "angelscripts-help": "^1.1.0",
+    "lerna": "^4.0.0",
+    "organic-stem-devshell": "github:node-organic/organic-stem-devshell#v3.15.0"
+  },
+  "scripts": {
+    "create-cell": "angel create cell",
+    "create-package": "angel create package"
+  },
+  "stackUpgrades": {
+    "organic-stem-skeleton": "2.0.0"
+  }
+}

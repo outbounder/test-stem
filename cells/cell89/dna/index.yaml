@@ -1,0 +1,7 @@
+cellKind: ""
+cellInfo: v1
+cwd: cells/cell89
+port: 1337
+secret: "@secrets.value"
+registry: "outbounder"
+mountpoint: "/cell89"

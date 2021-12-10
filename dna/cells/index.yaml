@@ -1,0 +1,4 @@
+cellsInfo: v1
+cellPaths:
+  - cells/cell89
+dockerRegistry: 'eu.gcr.io/moneyflow2-326312'
