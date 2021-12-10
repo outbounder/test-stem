@@ -22,7 +22,7 @@
   "devDependencies": {
     "angelabilities-package-scripts": "^2.0.1",
     "angelscripts-help": "^1.1.0",
-    "angelscripts-stem-cell-release": "file:../../../../node-organic/angelscripts-stem-cell-release",
+    "angelscripts-stem-cell-release": "^0.0.1",
     "angelscripts-stem-docker": "^0.1.2",
     "angelscripts-stem-k8s": "^0.0.2",
     "nodemon": "^2.0.15",
