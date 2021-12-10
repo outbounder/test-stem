@@ -1,6 +1,6 @@
 {
   "name": "cell89",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "k8s-up": "npx angel k8s apply k8s.deployment,k8s.service",
     "k8s-down": "npx angel k8s delete k8s.deployment,k8s.service",
     "k8s-logs": "npx angel k8s logs --app=cell89 --since=2m",
-    "release": "npx angel changes && npx angel version patch && npm run build && npx angel docker-publish && npx angel k8s apply k8s.deployment"
+    "release": "npx angel changed && npx angel version patch && npm run build && npx angel docker-publish && npx angel k8s apply k8s.deployment"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +22,9 @@
   "devDependencies": {
     "angelabilities-package-scripts": "^2.0.1",
     "angelscripts-help": "^1.1.0",
-    "angelscripts-stem-k8s": "^0.0.2",
+    "angelscripts-stem-cell-release": "file:../../../../node-organic/angelscripts-stem-cell-release",
     "angelscripts-stem-docker": "^0.1.2",
+    "angelscripts-stem-k8s": "^0.0.2",
     "nodemon": "^2.0.15",
     "organic-angel": "^0.6.0"
   },
